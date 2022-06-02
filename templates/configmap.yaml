@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hw-{{ .Release.Name }}-{{ .Chart.Version }}
+data:
+  myvalue: {{ .Values.message }}
+  from: {{ .Values.from }}
