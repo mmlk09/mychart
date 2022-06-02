@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: hw-{{ .Release.Name }}-{{ .Chart.Version }}
 data:
-  myvalue: {{ .Values.message }}
+  message: {{ .Values.message }}
   from: {{ .Values.from }}
